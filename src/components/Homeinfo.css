@@ -1,0 +1,83 @@
+
+.headertext {
+    color: white;
+    font-size: 30px;
+}
+.headertext2 {
+    color: gray;
+}
+#lang {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.img-style {
+    height: 30px;
+    margin: 0 10px;
+    border: 0.5px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img-hov0 {
+    background-color: rgb(153, 153, 5);
+    box-shadow: 0 0 20px yellow;
+    filter: drop-shadow(.5rem .5rem 1rem yellow)
+}
+
+.img-hov1 {
+    background-color: rgb(6, 6, 110);
+    box-shadow: 0 0 20px blue;
+    filter: drop-shadow(.5rem .5rem 1rem blue)
+}
+
+.img-hov2 {
+    background-color: rgb(14, 14, 141);
+    box-shadow: 0 0 20px rgb(35, 35, 243);
+    filter: drop-shadow(.5rem .5rem 1rem rgb(35, 35, 243))
+}
+
+.img-hov3 {
+    background-color: rgb(1, 44, 1);
+    box-shadow: 0 0 20px green;
+    filter: drop-shadow(.5rem .5rem 1rem green)
+}
+
+.img-hov4 {
+    background-color: rgb(3, 78, 3);
+    box-shadow: 0 0 20px rgb(9, 206, 9);
+    filter: drop-shadow(.5rem .5rem 1rem rgb(9, 206, 9))
+}
+.checkprojects {
+    position: absolute;
+    top: 100%;
+    margin-top: 70px;
+    width: 200px;
+    padding: 5px;
+    color: rgb(196, 193, 193);
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -2px rgb(99, 98, 98);
+}
+.position {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 750px) {
+    .headertext {
+        font-size: larger;
+        line-height: normal;
+        width: 100%;
+    }
+    .header-container{
+        width: 75%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .checkprojects {
+        display: none;
+    }
+}

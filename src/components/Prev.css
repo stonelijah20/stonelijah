@@ -1,0 +1,27 @@
+.prev {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid gray;
+    transform: rotate(45deg);
+    position: fixed;
+    top: 50%;
+    left: 2%;
+    border-right: none;
+    border-top: none;
+    transition: 0.5s
+}
+
+.prev:hover {
+    width: 60px;
+    height: 60px;
+}
+
+.prevclick {
+    width: 50px;
+    transform: rotate(0deg);
+    height: 5px;
+    border-bottom: 3px solid gray;
+    border-left: 3px solid gray;
+    background-color: gray;
+}

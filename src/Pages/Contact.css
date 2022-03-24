@@ -1,0 +1,143 @@
+input {
+    color: gray;
+}
+.section1style {
+    margin-top: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.section1style h1{
+    color: gray;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.section1style h3{
+    color: gray;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: justify;
+
+}
+.section2 {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 60px;
+}
+input {
+    width: 100%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.buttons {
+    display: flex;
+    justify-content: justify;
+    margin-top: 30px;
+}
+.button1 {
+    margin-right: 10px;
+}
+button {
+    padding: 10px;
+    color: gray;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -2px rgb(99, 98, 98);
+    cursor: pointer;
+}
+.csocials {
+    color: gray;
+    text-align: justify;
+    padding-left: 100px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.csocials h2 {
+    width: 50%;
+}
+.csocials ul {
+    display: flex;
+    margin-top: 40px;
+}
+.csocials ul li {
+    list-style-type: none;
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.csocials ul li a {
+    color: white
+}
+.csocials ul li:hover {
+    transition: 0.5s;
+    transform: translate(0, -10px)
+}
+.ctwitter {
+    color: #fff;
+    background-color: #1da1f2;
+}
+.clinkedin {
+    color: #fff;
+    background-color: #0e76a8;
+}
+.cinstagram {
+    color: #fff;
+    background: linear-gradient(purple, orange)
+}
+.cgithub {
+    color: whitesmoke;
+    background: #3a3b3c;
+}
+.email {
+    color: rgb(224, 220, 220);
+    cursor: pointer;
+}
+a  {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.email:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+@media screen and (max-width: 760px) {
+    .email a {
+        color:white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .cb-icon {
+        display: none;
+    }
+    .section1style {
+        margin-top: 70px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section1style h1 {
+        color: gray;
+        font-size: 50px;
+        padding-top: 50px;
+    }
+    .section2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section1style h3 {
+        letter-spacing: 1px;
+    }
+    .csocials {
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+        letter-spacing: normal;
+    }
+    .csocials h2 {
+        width: 100%;
+    }
+}

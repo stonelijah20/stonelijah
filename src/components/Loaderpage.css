@@ -1,0 +1,14 @@
+.loaderpage {
+    color: gray;
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
