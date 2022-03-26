@@ -1,6 +1,22 @@
 input {
     color: gray;
 }
+textarea {
+    color: gray;
+    min-height: 61px;
+    width: 100%;
+    resize: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    font-size: 20px;
+    margin-top: 5px;
+    padding-top: 15px;
+}
+textarea::-webkit-scrollbar{
+    width: 0px;
+}
 .section1style {
     margin-top: 70px;
     padding-left: 100px;

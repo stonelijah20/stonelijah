@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Contact.css'
 import { contactdata } from '../files/Data'
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa'
@@ -51,6 +51,15 @@ const inputVariants = {
 
 
 const Contact = () => {
+  useEffect(() => {
+    const textarea = document.querySelector('textarea')
+    textarea?.addEventListener('keyup', e => {
+      textarea.style.height = "61px"
+      let sh = textarea.scrollHeight
+      textarea.style.height = `${sh}px`
+    })
+  }, [])
+  
   const [change, setChange] = useState(true)
   const [contactdetails, setContactdetails] = useState({cname:"", cemail:""})
   const [cmessage, setCmessage] = useState("")
@@ -60,6 +69,7 @@ const Contact = () => {
     e.preventDefault()
     if(contactdetails.cname === "" || contactdetails.cemail === ""){
       setChange(true)
+      alert("Both fields are required")
     }else {
       setChange(!change)
     }
@@ -77,7 +87,11 @@ const Contact = () => {
   }
   const submitAll = (e:any) => {
     e.preventDefault()
-    setChange(true)
+    if (cmessage === ""){
+      setChange(false)
+      alert('The field is required')
+    }else{
+      setChange(true)
     fetch('https://contact-form-7541d-default-rtdb.firebaseio.com/Contact.json', {
       method: 'POST',
       body: JSON.stringify([contactdetails, cmessage]),
@@ -87,6 +101,8 @@ const Contact = () => {
     }).then(() => {
       alert("Message Sent")
     })
+    }
+    
 
     if(contactdetails.cname === "" || contactdetails.cemail === ""){
       setChange(true)
@@ -161,10 +177,10 @@ const Contact = () => {
             transition={{duration: 1, delay: 1.5}}
             exit={{opacity: 0, scale: 0, transition:{duration: 1}}}
           >
-              <motion.input name='message' placeholder="Fill with your message"
+              <motion.textarea name='message' placeholder="Fill with your message"
                 value={cmessage}
                 onChange={(e) => setCmessage(e.target.value)}
-              ></motion.input >
+              ></motion.textarea >
               <div className="buttons">
                 <motion.button className="button2" id='btn2'
                   onClick={submitAll}

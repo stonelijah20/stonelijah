@@ -47,7 +47,7 @@ const imgdata = [
 const contactdata = [
     {
         heading: "Get in touch",
-        body: "If you wanna get in touch, talk to me about a project collaboration or just say hi, fill up the awesome form below or send an email to",
+        body: "If you want to get in touch, talk to me about a project collaboration or just say hi, fill up the awesome form below or send an email to",
         email: "msontop.me@gmail.com",
         socialheading: "Connect with me on any of my social media accounts",
     }
