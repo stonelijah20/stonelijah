@@ -67,7 +67,7 @@ const Contact = () => {
 
   const clickHandler = (e:any) => {
     e.preventDefault()
-     const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+     const regex = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
     if(contactdetails.cname === "" || contactdetails.cemail === ""){
       setChange(true)
       alert("Both fields are required")
