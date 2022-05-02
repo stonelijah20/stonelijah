@@ -134,7 +134,7 @@
     letter-spacing: 2px;
 }
 .prjtbtn button:nth-child(1) {
-    margin-right: 50px;
+    /* margin-right: 40px; */
 }
 .prjtbtn button{
     background-color: transparent;

@@ -66,8 +66,7 @@ const Portfolio = () => {
                                 <h2>{title}</h2>
                                 <p>{info}</p>
                                 <div className="prjtbtn">
-                                  <button>View</button>
-                                <button>Source Code</button>
+                                  <button>Learn More</button>
                                 </div>
                             </div>
                         </div>

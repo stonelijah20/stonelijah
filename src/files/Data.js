@@ -1,6 +1,6 @@
-import pr1 from "../Assets/images/pr1.jpg";
-import pr2 from "../Assets/images/pr2.jpg";
-import pr3 from "../Assets/images/pr3.jpg";
+import pr1 from "../Assets/images/calculator.jpg";
+import pr2 from "../Assets/images/tictactow.jpg";
+import pr3 from "../Assets/images/weather.png";
 
 const navigations = [
     {
@@ -33,18 +33,18 @@ const portfolioheading = [
 const imgdata = [
     {
         pimg: pr1,
-        title: 'Frontend Project',
-        info: "Check out my Frontend project"
+        title: 'Calculator',
+        info: ""
     },
     {
         pimg: pr2,
-        title: 'Backend Project',
-        info: "Check out my Backend project"
+        title: 'Tic-Tac-Toe',
+        info: ""
     },
     {
         pimg: pr3,
-        title: 'Full-Stack Project',
-        info: "Check out my full-stack project"
+        title: 'Weather App',
+        info: ""
     },
     
 ]

@@ -79,6 +79,9 @@ const Contact = () => {
     }
     
   }
+  
+  
+  
   const backHandler = (e:any) => {
     e.preventDefault()
     setChange(!change)
